@@ -13,9 +13,10 @@ def main(argv):
     # use parameter set defined by user
     task_id = '1' if len(argv) < 2 else argv[1]
     params = parameters.get_params(task_id)
+    is_eval = True if params['mode'] == 'eval' else False
 
     # -------------- Extract features and labels for development set -----------------------------
-    dev_feat_cls = cls_feature_class.FeatureClass(params)
+    dev_feat_cls = cls_feature_class.FeatureClass(params, is_eval)
 
     # # Extract features and normalize them
     dev_feat_cls.extract_all_feature()

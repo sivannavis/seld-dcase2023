@@ -1,0 +1,9 @@
+python==3.8.11
+numpy<1.24
+torch==1.10.0
+scipy
+scikit-learn
+IPython
+matplotlib
+librosa
+pandas

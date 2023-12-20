@@ -11,16 +11,14 @@ def get_params(argv='1'):
         quick_test=True,     # To do quick test. Trains/test on small subset of dataset, and # of epochs
     
         finetune_mode = False,  # Finetune on existing model, requires the pretrained model path set - pretrained_model_weights
-        pretrained_model_weights='models/1_1_foa_dev_split6_model.h5',
+        pretrained_model_weights='models/7_15.2_dev_split0_multiaccdoa_mic_salsa_model.h5',
 
         # INPUT PATH
-        # dataset_dir='DCASE2020_SELD_dataset/',  # Base folder containing the foa/mic and metadata folders
-        dataset_dir='/scratch/asignal/partha/DCASE2023/DCASE2023_SELD_dataset',
+        dataset_dir='/datasets/STARSS2023', # Base folder containing the foa/mic and metadata folders
 
         # OUTPUT PATHS
-        # feat_label_dir='DCASE2020_SELD_dataset/feat_label_hnet/',  # Directory to dump extracted features and labels
-        feat_label_dir='/scratch/asignal/partha/DCASE2023/DCASE2023_SELD_dataset/seld_feat_label',
- 
+        feat_label_dir='/datasets/seld_feat_label_sofa_sim', # Directory to dump extracted features and labels
+
         model_dir='models/',            # Dumps the trained models and training curves in this folder
         dcase_output_dir='results/',    # recording-wise results are dumped in this path.
 
